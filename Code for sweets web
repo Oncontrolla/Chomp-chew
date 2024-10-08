@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Sweet Shop - Pre Order</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Sweet Shop</h1>
+        <p>Pre-order your favorite sweets, chocolates, and gum today!</p>
+    </header>
+
+    <section id="products">
+        <h2>Available Sweets</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <h3>Chocolate Bar</h3>
+                <p>Price: $5.00</p>
+                <button class="add-to-cart" data-product="Chocolate Bar" data-price="5">Pre-Order</button>
+            </div>
+            <div class="product-item">
+                <h3>Gummy Bears</h3>
+                <p>Price: $3.50</p>
+                <button class="add-to-cart" data-product="Gummy Bears" data-price="3.50">Pre-Order</button>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+    </section>
+
+    <section id="checkout">
+        <h2>Pre-Order Form</h2>
+        <form id="preorder-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" required><br><br>
+
+            <label for="location">Meeting Location:</label>
+            <input type="text" id="location" required><br><br>
+
+            <label for="promo">Promo Code (Optional):</label>
+            <input type="text" id="promo"><br><br>
+
+            <button type="button" onclick="processPreOrder()">Submit Pre-Order</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Your Sweet Shop. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
